@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ceramic index{% endblock %}
+
+{% block body %}
+    <h1>Ceramic index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+{% block content %}
+
+        <div class="col-md-12 text-center center-block">
+            <a href="http://localhost:8098/guest/"><button type="button" class="btn btn-warning mr-5 btn-lg btn-block">Back</button></a>
+            <a href="http://localhost:8098/main/"><button type="button" class="btn btn-warning mr-5 btn-lg btn-block">Main page</button></a>
+        </div>
+        <div id="content">
+            <!-- CONTENT -->
+        </div>
+        <!--//-->
+
+        <div class="container p-5">
+        </div>
+
+    {% endblock %}
+{% endblock %}

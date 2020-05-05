@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CeramicCategory index{% endblock %}
+
+{% block body %}
+    <h1>CeramicCategory index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for ceramic_category in ceramic_categories %}
+            <tr>
+                <td>{{ ceramic_category.id }}</td>
+                <td>{{ ceramic_category.name }}</td>
+                <td>
+                    <a href="{{ path('ceramic_category_show', {'id': ceramic_category.id}) }}">show</a>
+                    <a href="{{ path('ceramic_category_edit', {'id': ceramic_category.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('ceramic_category_new') }}">Create new</a>
+{% endblock %}
