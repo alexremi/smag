@@ -8,11 +8,6 @@ parameters:
     uploads: '%kernel.project_dir%/public/uploads/'
 
 services:
-    admin.ceramic:
-        class: App\Admin\CeramicAdmin
-        arguments: [~, App\Entity\Ceramic, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, label: Ceramic }
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
