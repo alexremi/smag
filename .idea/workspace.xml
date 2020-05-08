@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f835a59-d05c-4e9f-babb-4748a32edd62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/loginform.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/indexceramic.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin/CeramicAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/CeramicAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CeramicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CeramicController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FarforCategoryController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FarforController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Ceramic.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Ceramic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Farfor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/FarforCategory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CeramicType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CeramicType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/FarforCategoryType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/FarforType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/FarforCategoryRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/FarforRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ceramic/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ceramic/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ceramic/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ceramic/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor_category/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor_category/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor_category/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor_category/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor_category/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/farfor_category/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/guest/guestceramic.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guest/guestceramic.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/guest/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guest/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +44,14 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,15 +181,21 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/admin" />
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -175,30 +217,40 @@
       <workItem from="1583750678421" duration="599000" />
       <workItem from="1588225165007" duration="5439000" />
       <workItem from="1588319858352" duration="3556000" />
-      <workItem from="1588649537280" duration="895000" />
+      <workItem from="1588649537280" duration="1715000" />
+      <workItem from="1588655232760" duration="2000" />
+      <workItem from="1588655268965" duration="739000" />
+      <workItem from="1588834227038" duration="7121000" />
+      <workItem from="1588842011283" duration="599000" />
+      <workItem from="1588848144249" duration="5455000" />
+      <workItem from="1588907037224" duration="837000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="120" y="215" width="800" height="677" key="#Inspections" timestamp="1583229216863">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="120" y="215" width="800" height="677" key="#Inspections/67.27.1853.1053@67.27.1853.1053" timestamp="1583229216863" />
-    <state x="738" y="296" width="501" height="513" key="FileChooserDialogImpl" timestamp="1583719549660">
+    <state x="738" y="296" width="501" height="513" key="FileChooserDialogImpl" timestamp="1588656475143">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="738" y="296" width="501" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583719549660" />
+    <state x="738" y="296" width="501" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1588656475143" />
     <state x="67" y="188" key="SettingsEditor" timestamp="1583719539328">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="67" y="188" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583719539328" />
-    <state x="179" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1588649537793">
+    <state x="179" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1588655313373">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="179" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1588649537793" />
+    <state x="179" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1588655313373" />
+    <state x="657" y="253" key="run.anything.popup" timestamp="1588839668223">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1588839668223" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1583719489606">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

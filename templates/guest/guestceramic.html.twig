@@ -15,8 +15,26 @@
         </tr>
         </thead>
         <tbody>
+        {% for ceramic in ceramics %}
+            <tr>
+                <td>{{ ceramic.id }}</td>
 
+
+                <td>{{ ceramic.name }}</td>
+                <td>{{ ceramic.description }}</td>
+                <td>{{ ceramic.ceramicCategory }}</td>
+                <td>
+                    <a href="{{ path('ceramic_show', {'id': ceramic.id}) }}"><button type="button" class="btn btn-primary btn-sm">Show</button></a>
+                    <a href="{{ path('ceramic_edit', {'id': ceramic.id}) }}"><button type="button" class="btn btn-primary btn-sm">Edit</button></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
         </tbody>
+    </table>
     </table>
 {% block content %}
 

@@ -9,21 +9,22 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Image</th>
                 <th>Name</th>
                 <th>Description</th>
-                <th>actions</th>
+                <th>Category</th>
             </tr>
         </thead>
         <tbody>
         {% for ceramic in ceramics %}
             <tr>
                 <td>{{ ceramic.id }}</td>
+                <td>{% for image in ceramic.images %}
+                        <img src="{{ asset(image.path) }}" alt="" width = 90 height = 90>
+                    {%  endfor %}</td>
                 <td>{{ ceramic.name }}</td>
                 <td>{{ ceramic.description }}</td>
-                <td>
-                    <a href="{{ path('ceramic_show', {'id': ceramic.id}) }}">show</a>
-                    <a href="{{ path('ceramic_edit', {'id': ceramic.id}) }}">edit</a>
-                </td>
+                <td>{{ ceramic.ceramicCategory }}</td>
             </tr>
         {% else %}
             <tr>
@@ -33,5 +34,6 @@
         </tbody>
     </table>
 
-    <a href="{{ path('ceramic_new') }}">Create new</a>
+    <a href="http://localhost:8098/guest/"><button type="button" class="btn btn-danger mr-5 btn-lg btn-block">Back</button></a>
+    <a href="http://localhost:8098/adminpage/ceramic/"><button type="button" class="btn btn-success mr-5 btn-lg btn-block">Add more</button></a>
 {% endblock %}

@@ -9,6 +9,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\Image;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @Route("/ceramic")
@@ -36,6 +39,29 @@ class CeramicController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
+            $files = $request->files->get('ceramic')['images'];
+
+            /** @var UploadedFile $file */
+            foreach ($files as $file) {
+                $image = new Image();
+
+                $filename = md5(uniqid()) . $file->guessExtension();
+                $image->setFilename($filename);
+
+                $image->setPath(
+                    '/uploads/' . $filename
+                );
+
+                $file->move(
+                    $this->getParameter('uploads'),
+                    $filename
+                );
+
+                $image->setPost2($ceramic);
+                $ceramic->addImage($image);
+
+                $entityManager->persist($image);
+            }
             $entityManager->persist($ceramic);
             $entityManager->flush();
 

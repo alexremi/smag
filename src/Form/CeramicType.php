@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Ceramic;
 use App\Entity\CeramicCategory;
+use App\Entity\Image;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -20,6 +21,7 @@ class CeramicType extends AbstractType
             ->add('name')
             ->add('description')
             ->add('ceramicCategory')
+            ->add('images', FileType::class, [ 'multiple' => true, 'mapped' => false ], array('label' => 'Èçîáðàæåíèå'))
         ;
     }
 

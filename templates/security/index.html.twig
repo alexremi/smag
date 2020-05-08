@@ -1,10 +1,13 @@
 {% extends 'base.html.twig' %}
 {% block title %}Hello SecurityController!{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{asset('css/s4.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/loginform.css')}}">
+{% endblock %}
 
 {% block body %}
     <div class="vladmaxi-top">
-        <a href="{{ path('logout') }}">Logout</a>
-        <a href="http://localhost:8098/main">Main page</a>
         <div class="clr"></div>
     </div>
 
@@ -13,19 +16,26 @@
         <span class="error">{{ error.messageKey }}</span>
     {% endif %}
     <div id="login-form">
-        <h1>АВТОРИЗАЦИЯ</h1>
-        <fieldset>
-            <form action="{{ path('login') }}" method="POST">
-
-                <input type="login" name="_username" value="{{ last_username }}" placeholder="username">
-
-                <input type="password" name="_password" placeholder="password">
-
-                <input type="submit" value="LOGIN"></button>
 
 
-            </form>
-        </fieldset>
+
+    <body>
+    <div class="container">
+        <img src="https://dwstroy.ru/lessons/les3373/demo/img/men.png">
+        <form action="{{ path('login') }}" method="POST">
+            <div class="dws-input">
+                <input type="text" name="_username" value="{{ last_username }}" placeholder="Введите логин">
+            </div>
+            <div class="dws-input">
+                <input type="password" name="_password" placeholder="Введите пароль">
+            </div>
+            <input class="dws-submit" type="submit" name="submit" value="ВОЙТИ"><br />
+            <a href="{{ path('logout') }}"><button type="button" class="btn btn-primary mr-2 btn-lg btn-block">Выйти</button></a>
+            <a href="http://localhost:8098/main"><button type="button" class="btn btn-primary mr-5 btn-lg btn-block">На главную</button></a>
+        </form>
+
     </div>
+    </body>
+
 
 {% endblock %}
